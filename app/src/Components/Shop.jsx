@@ -1,36 +1,23 @@
+import { NavLink } from "react-router-dom";
 import Hero from "./Hero";
-import Card from "./shared/Card";
-import { useContext } from "react";
-import { ProductsContext } from "../Context/ProductsProvider";
-
+import PremiumCard from "./shared/PremiumCard";
+import { TiArrowRightOutline } from "react-icons/ti";
 function Shop() {
-  const { products } = useContext(ProductsContext);
+
   return (
     <div>
       <Hero />
-      <div className="flex items-center justify-center gap-5 flex-wrap">
-        {products.map((item) => (
-          <div key={item.id}>
-            <Card
-              id={item.id}
-              name={item.name}
-              model={item.model}
-              company={item.company}
-              years_old={item.years_old}
-              previous_owners={item.previous_owners}
-              rate={item.rate}
-              description={item.description}
-              image={item.image}
-              type={item.type}
-              seats={item.seats}
-              mileage={item.mileage}
-              fuel_type={item.fuel_type}
-              transmission={item.transmission}
-            />
-          </div>
-        ))}
+      <h1 className="text-[30px] mt-5 font-bold text-center">New Collections</h1>
+      <PremiumCard/>
+      <h1 className="text-[40px] text-center font-[500]">Explore Pre-Owned Vehicles</h1>
+      <div className="flex justify-center items-center">
+        <NavLink to="/usedcars">
+        <TiArrowRightOutline size={80}/>
+        </NavLink>
+
       </div>
     </div>
+
   );
 }
 

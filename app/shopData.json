@@ -400,5 +400,38 @@
       "fuel_type": "Petrol",
       "transmission": "Automatic"
     }
-  ]
-}
+  ],
+    "premiumCars": [
+      {
+        "id": 1,
+        "name": "Lamborghini Aventador",
+        "model": "Aventador LP 780-4",
+        "company": "Lamborghini",
+        "years_old": 1,
+        "rate": 393000,
+        "description": "A high-performance supercar with a V12 engine, unmatched speed, and sleek design.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/2023_Lamborghini_Aventador_Ultimae.jpg/1200px-2023_Lamborghini_Aventador_Ultimae.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Nissan GT-R",
+        "model": "GT-R R35",
+        "company": "Nissan",
+        "years_old": 2,
+        "rate": 113540,
+        "description": "The Nissan GT-R is a high-performance sports car known for its speed and advanced technology.",
+        "image": "https://img.freepik.com/premium-photo/nissan-gtr-r35-best-jdm-cars-wallpaper_1003686-33696.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Porsche 911 Turbo S",
+        "model": "911 Turbo S",
+        "company": "Porsche",
+        "years_old": 1,
+        "rate": 207000,
+        "description": "An iconic supercar offering blistering acceleration and top-tier engineering in both form and function.",
+        "image": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Porsche/911/10997/Porsche-911-Turbo-S/1717681627351/front-left-side-47.jpg?imwidth=420&impolicy=resize"
+      }
+    ]
+  }
+  
