@@ -1,14 +1,15 @@
 import './App.css'
 import AppRoutes from './AppRoutes'
+import ProductsProvider from './Context/ProductsProvider'
 
 function App() {
 
 
   return (
     <>
-    <AppRoutes>
-      
-    </AppRoutes>
+    <ProductsProvider>
+    <AppRoutes/>
+    </ProductsProvider>
     </>
   )
 }
