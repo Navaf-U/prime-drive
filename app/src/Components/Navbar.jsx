@@ -1,8 +1,12 @@
 import { CiLocationOn } from "react-icons/ci";
 import { HiOutlineUserCircle } from "react-icons/hi2";
+import { CiMenuBurger } from "react-icons/ci";
 import CarLogo from "../assets/LogoCar.png";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 function Navbar() {
+  const [menuBar,setMenBar]=useState(true)
+  
   return (
     <div className=" position fixed top-0 bg-white w-full z-50">
       <div className="flex flex-col md:flex-row justify-around border-b-[1px] h-auto items-center border-[gray] p-4">
