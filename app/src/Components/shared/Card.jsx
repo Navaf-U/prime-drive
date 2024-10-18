@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 
 /* eslint-disable react/prop-types */
 function Card({
+  id,
   name,
   model,
   company,
@@ -14,7 +15,7 @@ function Card({
   return (
     <div className="group">
       <div className="relative m-5 max-w-xs flex flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md transition-all duration-500 ease-in-out group-hover:shadow-xl group-hover:shadow-gray-500">
-        <NavLink className="transition-transform duration-500 ease-in-out hover:scale-105 flex justify-center w-full h-60 overflow-hidden rounded-lg">
+        <NavLink to={`/product/${id}`} className="transition-transform duration-500 ease-in-out hover:scale-105 flex justify-center w-full h-60 overflow-hidden rounded-lg">
           <img className="object-cover w-full h-full" src={image} alt={model} />
         </NavLink>
         <NavLink to="" className="relative mx-3 mt-3 flex justify-center">
