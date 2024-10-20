@@ -6,18 +6,21 @@ function ProductsView() {
   const {products} = useContext(ProductsContext)
   const {id} = useParams()  
 
-  const selectedProduct = products.find((item)=> item.id === id)
+  const selectedProduct = products.find((item)=> item.id == id)
   console.log(selectedProduct);
   
   return (
     <div>
-        {selectedProduct && Object.keys(selectedProduct).map((item) =>{
-            return <div key={item.id}>
-                <img src={item.image}alt="" />
-                <h1>{item.name}</h1>
-                <h2>{item.brand}</h2>
-            </div>
-        })}
+        {selectedProduct ? (
+          <div>
+          <img src={selectedProduct.image} alt="" />
+          <h1>{selectedProduct.name}</h1>
+          <h2>{selectedProduct.brand}</h2>
+          </div>
+        ):(
+          <h1>not loading</h1>
+        )
+  }
     </div>
   )
 }
