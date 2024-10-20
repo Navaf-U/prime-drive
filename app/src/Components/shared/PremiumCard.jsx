@@ -33,11 +33,13 @@ function PremiumCard() {
               className="flex flex-col w-[300px] h-[500px] overflow-hidden rounded-lg border border-gray-200 bg-white shadow-xl hover:shadow-2xl transition-shadow duration-300 ease-in-out"
             >
               <div className="w-full h-72 overflow-hidden rounded-t-lg">
-                <img
+               <NavLink to={`product/${item.id}`}>
+               <img
                   className="w-full h-full object-cover"
                   src={item.image}
                   alt={item.model}
                 />
+               </NavLink>
               </div>
               <div className="px-6 py-4 flex-grow flex flex-col">
                 <h3 className="text-2xl font-bold text-gray-800">{item.name}</h3>

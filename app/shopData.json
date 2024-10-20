@@ -403,7 +403,7 @@
   ],
     "premiumCars": [
       {
-        "id": 1,
+        "id": "a1",
         "name": "Lamborghini Aventador",
         "model": "Aventador LP 780-4",
         "company": "Lamborghini",
@@ -413,7 +413,7 @@
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/2023_Lamborghini_Aventador_Ultimae.jpg/1200px-2023_Lamborghini_Aventador_Ultimae.jpg"
       },
       {
-        "id": 2,
+        "id": "a2",
         "name": "Nissan GT-R",
         "model": "GT-R R35",
         "company": "Nissan",
@@ -423,7 +423,7 @@
         "image": "https://img.freepik.com/premium-photo/nissan-gtr-r35-best-jdm-cars-wallpaper_1003686-33696.jpg"
       },
       {
-        "id": 3,
+        "id": "a3",
         "name": "Porsche 911 Turbo S",
         "model": "911 Turbo S",
         "company": "Porsche",
