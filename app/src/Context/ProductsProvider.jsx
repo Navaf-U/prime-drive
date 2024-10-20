@@ -7,6 +7,7 @@ export const ProductsContext = createContext();
 // eslint-disable-next-line react/prop-types
 function ProductsProvider({ children }) {
   const [products, setProducts] = useState([]);
+  const [premiumProducts, setPremiumProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -25,12 +26,28 @@ function ProductsProvider({ children }) {
 
     fetchProducts();
   }, []);
+  
+  
+useEffect(()=>{
+  const fetchPremiumProducts = async () => {
+    try {
+      const { data } = await axios.get("http://localhost:3000/premiumCars");
+      setPremiumProducts(data);
+    } catch (err) {
+      console.log(err);
+    } finally {
+      setLoading(false);
+    }
+  };
 
+  fetchPremiumProducts();
+},[])
   const value = {
     products,
     setProducts,
     loading,
     setLoading,
+    premiumProducts
   };
 
   return (
