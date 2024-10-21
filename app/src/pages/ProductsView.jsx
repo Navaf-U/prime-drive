@@ -27,6 +27,10 @@ function ProductsView() {
                 <p className="text-sm text-gray-500">Years Old: {selectedProduct.years_old}</p>
                 <p className="text-sm text-gray-500">Rate: ${selectedProduct.rate.toLocaleString()}</p>
                 <p className="text-sm text-gray-700 mt-2">{selectedProduct.description}</p>
+                
+                <button className="mt-4 bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600">
+                  Add to Cart
+                </button>
               </div>
             </div>
           )}
@@ -45,6 +49,10 @@ function ProductsView() {
                 <p className="text-sm text-gray-500">Years Old: {selectedPremiumProduct.years_old}</p>
                 <p className="text-sm text-gray-500">Rate: ${selectedPremiumProduct.rate.toLocaleString()}</p>
                 <p className="text-sm text-gray-700 mt-2">{selectedPremiumProduct.description}</p>
+                
+                <button className="mt-4 bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600">
+                  Add to Cart
+                </button>
               </div>
             </div>
           )}
