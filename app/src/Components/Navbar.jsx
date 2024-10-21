@@ -5,6 +5,7 @@ import { CiSearch } from "react-icons/ci";
 import CarLogo from "../assets/LogoCar.png";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import { CiShoppingCart } from "react-icons/ci";
 function Navbar() {
   const [menuBar,setMenBar]=useState(false)
   const toggleBar=()=>{
@@ -43,7 +44,6 @@ function Navbar() {
             className="p-2 border w-[100%] border-gray-300 rounded-md outline-[#8C3061]"
           />
         </div>
-
         <div className="flex gap-5">
           <CiSearch size={30} className="text-[#8C3061 sm:hidden "/>
           <p className="text-[#8C3061] cursor-pointer hover:text-[#da45ee]">
@@ -52,6 +52,14 @@ function Navbar() {
           <p className="text-[#8C3061] cursor-pointer hover:text-[#da45ee]">
             <HiOutlineUserCircle size={30} />
           </p>
+
+      { /* need to add the isLogged condition */ }
+
+          <p className="text-[#8C3061] cursor-pointer hover:text-[#da45ee]">
+            <CiShoppingCart size={30} />
+            {/* <div className="h-2 w-2 rounded-full outline outline-1 outline-[red] position absolute text-[10px]">0</div> */}
+          </p>
+  
         </div>
       <CiMenuBurger className="cursor-pointer ms-5 md:hidden" onClick={toggleBar} />
       </div>
@@ -75,7 +83,7 @@ function Navbar() {
             REVIEWS & NEWS
           </h1>
         </div>
-
+        
     </div>
   );
 }
