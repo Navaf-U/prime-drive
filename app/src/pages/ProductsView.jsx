@@ -1,10 +1,17 @@
 import { useContext } from "react";
 import { ProductsContext } from "../Context/ProductsProvider";
 import { useParams } from "react-router-dom";
+import { add } from "../store/cartSlice";
+import { useDispatch } from "react-redux";
 
 function ProductsView() {
   const { products, premiumProducts } = useContext(ProductsContext);
   const { id } = useParams();
+  const dispatch = useDispatch();
+
+  const addToCart = (prod) => {
+    dispatch(add(prod));
+  };
 
   const selectedProduct = products?.find((item) => item.id == id);
   const selectedPremiumProduct = premiumProducts?.find((item) => item.id == id);
@@ -28,7 +35,7 @@ function ProductsView() {
                 <p className="text-sm text-gray-500">Rate: ${selectedProduct.rate.toLocaleString()}</p>
                 <p className="text-sm text-gray-700 mt-2">{selectedProduct.description}</p>
                 
-                <button className="mt-4 bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600">
+                <button onClick={()=>addToCart(selectedProduct)} className="mt-4 bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600">
                   Add to Cart
                 </button>
               </div>
@@ -50,7 +57,7 @@ function ProductsView() {
                 <p className="text-sm text-gray-500">Rate: ${selectedPremiumProduct.rate.toLocaleString()}</p>
                 <p className="text-sm text-gray-700 mt-2">{selectedPremiumProduct.description}</p>
                 
-                <button className="mt-4 bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600">
+                <button onClick={()=>addToCart(selectedPremiumProduct)} className="mt-4 bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600">
                   Add to Cart
                 </button>
               </div>
