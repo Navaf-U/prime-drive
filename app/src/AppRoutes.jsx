@@ -5,6 +5,7 @@ import UsedCars from "./pages/UsedCars";
 import ProductsView from "./pages/ProductsView";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Cart from "./pages/Cart";
 function AppRoutes() {
   return (
     <div>
@@ -23,6 +24,7 @@ function AppRoutes() {
           <Route path="/product/:id" element={<ProductsView/>}/>
           <Route path="login" element={<Login/>}/>
           <Route path="signup" element={<Signup/>}/>
+          <Route path="cart" element={<Cart/>}/>
           </Route>
       </Routes>
     </div>
