@@ -57,10 +57,12 @@ function Navbar() {
 
       { /* i need to add the isLogged condition */ }
 
+          <NavLink to="/cart">
           <div className="text-[#8C3061] cursor-pointer hover:text-[#da45ee] position relative">
             <CiShoppingCart size={30} />
             <div className="h-4 w-4 rounded-full bg-[#8C3061] position absolute text-[14px] top-[-8px] right-0 text-white text-center"><h1 className="position absolute bottom-[-2px] right-1 font-[500]">{cartProducts.length}</h1></div>
           </div>
+          </NavLink>
   
         </div>
       <CiMenuBurger className="cursor-pointer ms-5 md:hidden" onClick={toggleBar} />

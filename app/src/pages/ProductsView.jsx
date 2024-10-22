@@ -15,7 +15,6 @@ function ProductsView() {
 
   const selectedProduct = products?.find((item) => item.id == id);
   const selectedPremiumProduct = premiumProducts?.find((item) => item.id == id);
-
   return (
     <div className="flex flex-col items-center justify-center p-4 mt-20">
       {selectedProduct || selectedPremiumProduct ? (
@@ -32,7 +31,7 @@ function ProductsView() {
                 <h2 className="text-lg text-gray-700 mb-1">{selectedProduct.company}</h2>
                 <p className="text-sm text-gray-500">Model: {selectedProduct.model}</p>
                 <p className="text-sm text-gray-500">Years Old: {selectedProduct.years_old}</p>
-                <p className="text-sm text-gray-500">Rate: ${selectedProduct.rate.toLocaleString()}</p>
+                <p className="text-sm text-gray-500">Rate: ${selectedProduct.rate}</p>
                 <p className="text-sm text-gray-700 mt-2">{selectedProduct.description}</p>
                 
                 <button onClick={()=>addToCart(selectedProduct)} className="mt-4 bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600">
@@ -54,7 +53,7 @@ function ProductsView() {
                 <h2 className="text-lg text-gray-700 mb-1">{selectedPremiumProduct.company}</h2>
                 <p className="text-sm text-gray-500">Model: {selectedPremiumProduct.model}</p>
                 <p className="text-sm text-gray-500">Years Old: {selectedPremiumProduct.years_old}</p>
-                <p className="text-sm text-gray-500">Rate: ${selectedPremiumProduct.rate.toLocaleString()}</p>
+                <p className="text-sm text-gray-500">Rate: ${selectedPremiumProduct.rate}</p>
                 <p className="text-sm text-gray-700 mt-2">{selectedPremiumProduct.description}</p>
                 
                 <button onClick={()=>addToCart(selectedPremiumProduct)} className="mt-4 bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600">

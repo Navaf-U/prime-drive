@@ -54,7 +54,7 @@ function PremiumCard() {
 
               <div className="px-6 pt-2 pb-6 mt-auto">
                 <NavLink
-                  to="/premium-cars"
+                  to={`product/${item.id}`}
                   className="block w-full text-center rounded-md bg-[#522258] px-4 py-3 text-white font-medium text-lg hover:bg-[#431a49] transition-all"
                 >
                   View Details
