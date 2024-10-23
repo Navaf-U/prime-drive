@@ -1,7 +1,13 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { removeCart } from "../store/cartSlice";
 
 function Cart() {
   const cartProducts = useSelector((state) => state.cart);
+  const dispatch = useDispatch()
+
+  const handler = (id)=>{
+    dispatch(removeCart(id))
+  }
 
   return (
     <div className="max-w-4xl mx-auto p-6 mt-40 bg-white shadow-lg rounded-lg">
@@ -27,6 +33,10 @@ function Cart() {
             <span className="text-lg text-gray-600 font-semibold">
               ${item.rate}
             </span>
+            <button onClick={()=>handler(item.id)} className="text-lg text-gray-600 font-semibold">
+              remove
+            </button>
+
           </div>
         ))
       ) : (
