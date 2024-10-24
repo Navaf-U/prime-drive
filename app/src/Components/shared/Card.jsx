@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { Button } from "@mui/material";
 /* eslint-disable react/prop-types */
 function Card({
   id,
@@ -11,8 +12,6 @@ function Card({
   description,
   image,
 }) {
-  
-
   return (
     <div className="group">
       <div className="relative m-5 max-w-xs flex flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md transition-all duration-500 ease-in-out group-hover:shadow-xl group-hover:shadow-gray-500">
@@ -55,7 +54,7 @@ function Card({
           </p>
           <NavLink
             to={`/product/${id}`}
-            className="flex items-center justify-center rounded-md mt-2 bg-[#522258] px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-[#431a49] focus:outline-none focus:ring-4 focus:ring-blue-300"
+            className="flex items-center justify-center rounded-md mt-2 px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +65,12 @@ function Card({
             >
               <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
             </svg>
-            <button>View Details</button>
+            <Button
+              variant="contained"
+              style={{ backgroundColor: "#522258", color: "#fff" }}
+            >
+              View Details
+            </Button>
           </NavLink>
         </div>
       </div>
