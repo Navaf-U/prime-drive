@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { removeCart } from "../store/cartSlice";
-
+import { CiCircleRemove } from "react-icons/ci";
+import { Link } from "react-router-dom";
 function Cart() {
   const cartProducts = useSelector((state) => state.cart);
   const dispatch = useDispatch()
@@ -20,21 +21,23 @@ function Cart() {
           >
             <div className="flex items-center">
               <div className="w-20 h-20 bg-gray-100 rounded-lg mr-6 overflow-hidden flex items-center justify-center">
-                <img
+               <Link to={`/product/${item.id}`}>
+               <img
                   src={item.image}
                   alt={item.name}
                   className="w-full h-full object-cover"
                 />
+               </Link>
               </div>
-              <span className="text-lg text-gray-700 font-medium">
+              <span className="text-lg text-gray-700 hover:text-[#8C3061] font-medium">
                 {item.name}
               </span>
             </div>
-            <span className="text-lg text-gray-600 font-semibold">
+            <span className="text-lg text-gray-600 font-semibold hover:text-[#8C3061]">
               ${item.rate}
             </span>
             <button onClick={()=>handler(item.id)} className="text-lg text-gray-600 font-semibold">
-              remove
+            <CiCircleRemove size={50} className="hover:text-[#8C3061]" />
             </button>
 
           </div>
