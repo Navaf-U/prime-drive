@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { removeCart } from "../store/cartSlice";
 import { CiCircleRemove } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import { MdProductionQuantityLimits } from "react-icons/md";
 function Cart() {
   const cartProducts = useSelector((state) => state.cart);
   const dispatch = useDispatch()
@@ -34,7 +35,10 @@ function Cart() {
               </span>
             </div>
             <span className="text-lg text-gray-600 font-semibold hover:text-[#8C3061]">
-              ${item.rate}
+              ${item.totalPrice}
+            </span>
+            <span className="text-lg flex text-gray-600 font-semibold justify-center items-center hover:text-[#8C3061]">
+            <MdProductionQuantityLimits size={22} /> &nbsp; : <span className="text-1xl"> &nbsp;{item.quantity}</span>
             </span>
             <button onClick={()=>handler(item.id)} className="text-lg text-gray-600 font-semibold">
             <CiCircleRemove size={50} className="hover:text-[#8C3061]" />

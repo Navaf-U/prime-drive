@@ -6,13 +6,19 @@ const cartSlice = createSlice({
     name:"cart",
     initialState,
     reducers:{
-        add(state,action){
-            state.push(action.payload)
-        },
-        removeCart(state,action){
+        add : (state,action)=>{
+        const exitingItem = state.find(item => item.id === action.payload.id);
+        if(exitingItem){
+            exitingItem.quantity += 1
+            exitingItem.totalPrice += action.payload.rate
+        }else{
+                state.push({...action.payload,quantity : 1,totalPrice: action.payload.rate })
+        }
+    },
+        removeCart: (state,action)=>{
          return state.filter((item) => item.id !== action.payload )
         }
-    }
+},
 })
 
 

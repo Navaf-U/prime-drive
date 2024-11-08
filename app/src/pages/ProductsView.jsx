@@ -9,8 +9,8 @@ function ProductsView() {
   const { id } = useParams();
   const dispatch = useDispatch();
 
-  const addToCart = (prod) => {
-    dispatch(add(prod));
+  const addToCart = (products) => {
+    dispatch(add(products));
   };
 
   const selectedProduct = products?.find((item) => item.id == id);
