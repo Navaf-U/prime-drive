@@ -1,8 +1,8 @@
+import CarLogo from "../assets/LogoCar.png";
 import { CiLocationOn } from "react-icons/ci";
 import { HiOutlineUserCircle } from "react-icons/hi2";
 import { CiMenuBurger } from "react-icons/ci";
 import { CiSearch } from "react-icons/ci";
-import CarLogo from "../assets/LogoCar.png";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { CiShoppingCart } from "react-icons/ci";

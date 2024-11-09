@@ -1,4 +1,3 @@
-import { Routes, Route, Outlet } from "react-router-dom";
 import Shop from "./Components/Shop";
 import Navbar from "./Components/Navbar";
 import UsedCars from "./pages/UsedCars";
@@ -6,6 +5,7 @@ import ProductsView from "./pages/ProductsView";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Cart from "./pages/Cart";
+import { Routes, Route, Outlet } from "react-router-dom";
 function AppRoutes() {
   return (
     <div>

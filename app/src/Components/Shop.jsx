@@ -1,6 +1,6 @@
-import { NavLink } from "react-router-dom";
 import Hero from "./Hero";
 import PremiumCard from "./shared/PremiumCard";
+import { NavLink } from "react-router-dom";
 function Shop() {
 
   return (

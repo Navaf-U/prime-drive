@@ -1,6 +1,6 @@
+import Card from "../Components/shared/Card";
 import { useContext } from "react";
 import { ProductsContext } from "../Context/ProductsProvider";
-import Card from "../Components/shared/Card";
 
 function UsedCars() {
     const { products } = useContext(ProductsContext);
