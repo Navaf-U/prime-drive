@@ -5,7 +5,7 @@ const ConnectDB = async () => {
   });
   // represents the state
    try{
-    await mongoose.connect(`${process.env.HOST}/database`   );
+    await mongoose.connect( `${process.env.HOST}`);
    }catch(err){
     console.log(err.message)
    }
