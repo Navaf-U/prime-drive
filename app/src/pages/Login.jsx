@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 
+
+
 const Login = () => {
   return (
     <div className="bg-gray-100 flex items-center justify-center min-h-screen">
@@ -28,7 +30,7 @@ const Login = () => {
           </button>
           <p className="text-center no-underline mt-4">
             Don&apos;t have an account?{" "}
-            <NavLink to="/signup" className="text-purple-800 hover:underline">
+            <NavLink to="/register" className="text-purple-800 hover:underline">
               Sign up
             </NavLink>
           </p>
