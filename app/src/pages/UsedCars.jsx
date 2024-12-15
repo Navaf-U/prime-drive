@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Card from "../Components/shared/Card";
 import { useDispatch, useSelector } from "react-redux";
-import {fetchProducts} from "../store/productsSlice"
+import {fetchProducts} from "../Slices/productsSlice"
 function UsedCars() {
     const { products,loading, error  } = useSelector((state)=>state.products)
     const dispatch = useDispatch()

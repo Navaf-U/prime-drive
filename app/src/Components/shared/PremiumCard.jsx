@@ -1,7 +1,7 @@
 import {  useEffect} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
-import { fetchPremiumProducts } from "../../store/productsSlice";
+import { fetchPremiumProducts } from "../../Slices/productsSlice";
 
 /* eslint-disable react/prop-types */
 function PremiumCard(){

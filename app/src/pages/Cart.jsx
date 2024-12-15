@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { removeCart } from "../store/cartSlice";
+import { removeCart } from "../Slices/cartSlice";
 import { CiCircleRemove } from "react-icons/ci";
 import { Link } from "react-router-dom";
 import { MdProductionQuantityLimits } from "react-icons/md";

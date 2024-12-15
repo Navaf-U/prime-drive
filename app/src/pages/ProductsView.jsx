@@ -1,6 +1,6 @@
 
 import { useParams } from "react-router-dom";
-import { add } from "../store/cartSlice";
+import { add } from "../Slices/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 function ProductsView() {
