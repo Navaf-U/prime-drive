@@ -1,17 +1,19 @@
-import { useContext } from "react";
-import { ProductsContext } from "../Context/ProductsProvider";
+
 import { useParams } from "react-router-dom";
 import { add } from "../store/cartSlice";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 function ProductsView() {
-  const { products, premiumProducts } = useContext(ProductsContext);
   const { id } = useParams();
+
+
+  const { products, premiumProducts } = useSelector((state)=>state.products);
   const dispatch = useDispatch();
 
   const addToCart = (products) => {
     dispatch(add(products));
   };
+
 
   const selectedProduct = products?.find((item) => item.id == id);
   const selectedPremiumProduct = premiumProducts?.find((item) => item.id == id);

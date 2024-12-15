@@ -1,32 +1,27 @@
-import axios from "axios";
-import { useContext, useEffect, useState } from "react";
+import {  useEffect} from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
-import { ProductsContext } from "../../Context/ProductsProvider";
+import { fetchPremiumProducts } from "../../store/productsSlice";
 
 /* eslint-disable react/prop-types */
-function PremiumCard() {
-  const { setLoading } = useContext(ProductsContext);
-  const [premiumCars, setPremiumCars] = useState([]);
+function PremiumCard(){
+  const dispatch = useDispatch()
+  const {premiumProducts,loading,error} = useSelector((state)=>state.products)
+  useEffect(()=>{
+    dispatch(fetchPremiumProducts())
+  },[dispatch])
 
-  useEffect(() => {
-    const fetchPremiumProduct = async () => {
-      setLoading(true);
-      try {
-        const { data } = await axios.get("http://localhost:3000/premiumCars");
-        setPremiumCars(data);
-      } catch (err) {
-        console.log(err);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchPremiumProduct();
-  }, [setLoading]);
+  if(loading){
+    return <p> Loading premium products... </p>
+  }
+  if (error) {
+    return <p className="text-center text-red-500">Error: {error}</p>;
+  }
 
   return (
     <div className="flex flex-wrap justify-center mx-auto my-10 gap-5">
-      {premiumCars &&
-        premiumCars.map((item) => {
+      {premiumProducts &&
+        premiumProducts.map((item) => {
           return (
             <div
               key={item.id}

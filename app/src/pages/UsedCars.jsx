@@ -1,9 +1,21 @@
+import { useEffect } from "react";
 import Card from "../Components/shared/Card";
-import { useContext } from "react";
-import { ProductsContext } from "../Context/ProductsProvider";
-
+import { useDispatch, useSelector } from "react-redux";
+import {fetchProducts} from "../store/productsSlice"
 function UsedCars() {
-    const { products } = useContext(ProductsContext);
+    const { products,loading, error  } = useSelector((state)=>state.products)
+    const dispatch = useDispatch()
+
+    useEffect(()=>{
+      dispatch(fetchProducts())
+    },[dispatch])
+
+    if(loading){
+      return <p>Loading...</p>
+    }
+    if(error){
+      return <p>{error}</p>
+    }
   return (
     <div className="">
        <div className="mt-28 flex items-center justify-center gap-5 flex-wrap">
