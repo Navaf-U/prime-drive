@@ -15,7 +15,7 @@ function ProductsView() {
   };
 
 
-  const selectedProduct = products?.find((item) => item.id == id);
+  const selectedProduct = products?.find((item) => item._id == id);
   const selectedPremiumProduct = premiumProducts?.find((item) => item.id == id);
   return (
     <div className="flex flex-col items-center justify-center p-4 mt-20">

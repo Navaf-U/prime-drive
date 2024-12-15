@@ -20,9 +20,9 @@ function UsedCars() {
     <div className="">
        <div className="mt-28 flex items-center justify-center gap-5 flex-wrap">
         {products.map((item) => (
-          <div key={item.id}>
+          <div key={item._id}>
             <Card
-              id={item.id}
+              id={item._id}
               name={item.name}
               model={item.model}
               company={item.company}
