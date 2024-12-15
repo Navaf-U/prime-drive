@@ -1,7 +1,6 @@
 {
   "products": [
     {
-      "id": 1,
       "name": "Civic",
       "model": "2020",
       "company": "Honda",
@@ -14,10 +13,10 @@
       "seats": 5,
       "mileage": "30,000 miles",
       "fuel_type": "Petrol",
-      "transmission": "Automatic"
+      "transmission": "Automatic",
+      "isDeleted":false
     },
     {
-      "id": 2,
       "name": "Model S",
       "model": "2018",
       "company": "Tesla",
@@ -30,10 +29,10 @@
       "seats": 5,
       "mileage": "60,000 miles",
       "fuel_type": "Electric",
-      "transmission": "Automatic"
+      "transmission": "Automatic",
+      "isDeleted":false
     },
     {
-      "id": 3,
       "name": "Corolla",
       "model": "2019",
       "company": "Toyota",
@@ -46,10 +45,10 @@
       "seats": 5,
       "mileage": "25,000 miles",
       "fuel_type": "Petrol",
-      "transmission": "Manual"
+      "transmission": "Manual",
+      "isDeleted":false
     },
     {
-      "id": 4,
       "name": "X5",
       "model": "2017",
       "company": "BMW",
@@ -62,10 +61,10 @@
       "seats": 5,
       "mileage": "45,000 miles",
       "fuel_type": "Diesel",
-      "transmission": "Automatic"
+      "transmission": "Automatic",
+      "isDeleted":false
     },
     {
-      "id": 5,
       "name": "Accord",
       "model": "2018",
       "company": "Honda",
@@ -78,10 +77,10 @@
       "seats": 5,
       "mileage": "50,000 miles",
       "fuel_type": "Hybrid",
-      "transmission": "Automatic"
+      "transmission": "Automatic",
+      "isDeleted":false
     },
     {
-      "id": 6,
       "name": "Camry",
       "model": "2020",
       "company": "Toyota",
@@ -94,10 +93,10 @@
       "seats": 5,
       "mileage": "40,000 miles",
       "fuel_type": "Petrol",
-      "transmission": "Automatic"
+      "transmission": "Automatic",
+      "isDeleted":false
     },
     {
-      "id": 7,
       "name": "Mustang",
       "model": "2016",
       "company": "Ford",
@@ -110,10 +109,10 @@
       "seats": 4,
       "mileage": "70,000 miles",
       "fuel_type": "Petrol",
-      "transmission": "Manual"
+      "transmission": "Manual",
+      "isDeleted":false
     },
     {
-      "id": 8,
       "name": "Model 3",
       "model": "2021",
       "company": "Tesla",
@@ -126,10 +125,10 @@
       "seats": 5,
       "mileage": "20,000 miles",
       "fuel_type": "Electric",
-      "transmission": "Automatic"
+      "transmission": "Automatic",
+      "isDeleted":false
     },
     {
-      "id": 9,
       "name": "Q7",
       "model": "2019",
       "company": "Audi",
@@ -142,10 +141,10 @@
       "seats": 7,
       "mileage": "40,000 miles",
       "fuel_type": "Diesel",
-      "transmission": "Automatic"
+      "transmission": "Automatic",
+      "isDeleted":false
     },
     {
-      "id": 10,
       "name": "Swift",
       "model": "2018",
       "company": "Suzuki",
@@ -158,10 +157,10 @@
       "seats": 5,
       "mileage": "35,000 miles",
       "fuel_type": "Petrol",
-      "transmission": "Manual"
+      "transmission": "Manual",
+      "isDeleted":false
     },
     {
-      "id": 11,
       "name": "Fortuner",
       "model": "2016",
       "company": "Toyota",
@@ -174,10 +173,10 @@
       "seats": 7,
       "mileage": "75,000 miles",
       "fuel_type": "Diesel",
-      "transmission": "Automatic"
+      "transmission": "Automatic",
+      "isDeleted":false
     },
     {
-      "id": 12,
       "name": "A4",
       "model": "2017",
       "company": "Audi",
@@ -190,10 +189,10 @@
       "seats": 5,
       "mileage": "55,000 miles",
       "fuel_type": "Petrol",
-      "transmission": "Automatic"
+      "transmission": "Automatic",
+      "isDeleted":false
     },
     {
-      "id": 13,
       "name": "i20",
       "model": "2019",
       "company": "Hyundai",
@@ -206,10 +205,10 @@
       "seats": 5,
       "mileage": "30,000 miles",
       "fuel_type": "Petrol",
-      "transmission": "Manual"
+      "transmission": "Manual",
+      "isDeleted":false
     },
     {
-      "id": 14,
       "name": "Range Rover",
       "model": "2015",
       "company": "Land Rover",
@@ -222,10 +221,10 @@
       "seats": 5,
       "mileage": "80,000 miles",
       "fuel_type": "Diesel",
-      "transmission": "Automatic"
+      "transmission": "Automatic",
+      "isDeleted":false
     },
     {
-      "id": 15,
       "name": "Altima",
       "model": "2020",
       "company": "Nissan",
@@ -238,10 +237,10 @@
       "seats": 5,
       "mileage": "35,000 miles",
       "fuel_type": "Petrol",
-      "transmission": "Automatic"
+      "transmission": "Automatic",
+      "isDeleted":false
     },
     {
-      "id": 16,
       "name": "C-Class",
       "model": "2017",
       "company": "Mercedes-Benz",
@@ -254,10 +253,10 @@
       "seats": 5,
       "mileage": "55,000 miles",
       "fuel_type": "Petrol",
-      "transmission": "Automatic"
+      "transmission": "Automatic",
+      "isDeleted":false
     },
     {
-      "id": 17,
       "name": "F-150",
       "model": "2019",
       "company": "Ford",
@@ -270,10 +269,10 @@
       "seats": 5,
       "mileage": "50,000 miles",
       "fuel_type": "Petrol",
-      "transmission": "Automatic"
+      "transmission": "Automatic",
+      "isDeleted":false
     },
     {
-      "id": 18,
       "name": "Seltos",
       "model": "2021",
       "company": "Kia",
@@ -286,10 +285,10 @@
       "seats": 5,
       "mileage": "20,000 miles",
       "fuel_type": "Petrol",
-      "transmission": "Automatic"
+      "transmission": "Automatic",
+      "isDeleted":false
     },
     {
-      "id": 19,
       "name": "CX-5",
       "model": "2018",
       "company": "Mazda",
@@ -302,10 +301,10 @@
       "seats": 5,
       "mileage": "40,000 miles",
       "fuel_type": "Petrol",
-      "transmission": "Automatic"
+      "transmission": "Automatic",
+      "isDeleted":false
     },
     {
-      "id": 20,
       "name": "Charger",
       "model": "2016",
       "company": "Dodge",
@@ -318,10 +317,10 @@
       "seats": 5,
       "mileage": "65,000 miles",
       "fuel_type": "Petrol",
-      "transmission": "Automatic"
+      "transmission": "Automatic",
+      "isDeleted":false
     },
     {
-      "id": 21,
       "name": "Sorento",
       "model": "2019",
       "company": "Kia",
@@ -334,10 +333,10 @@
       "seats": 7,
       "mileage": "45,000 miles",
       "fuel_type": "Petrol",
-      "transmission": "Automatic"
+      "transmission": "Automatic",
+      "isDeleted":false
     },
     {
-      "id": 22,
       "name": "X3",
       "model": "2018",
       "company": "BMW",
@@ -350,10 +349,10 @@
       "seats": 5,
       "mileage": "55,000 miles",
       "fuel_type": "Diesel",
-      "transmission": "Automatic"
+      "transmission": "Automatic",
+      "isDeleted":false
     },
     {
-      "id": 23,
       "name": "Compass",
       "model": "2020",
       "company": "Jeep",
@@ -366,10 +365,10 @@
       "seats": 5,
       "mileage": "30,000 miles",
       "fuel_type": "Petrol",
-      "transmission": "Automatic"
+      "transmission": "Automatic",
+      "isDeleted":false
     },
     {
-      "id": 24,
       "name": "Wrangler",
       "model": "2017",
       "company": "Jeep",
@@ -382,10 +381,10 @@
       "seats": 4,
       "mileage": "70,000 miles",
       "fuel_type": "Petrol",
-      "transmission": "Manual"
+      "transmission": "Manual",
+      "isDeleted":false
     },
     {
-      "id": 25,
       "name": "Tiguan",
       "model": "2019",
       "company": "Volkswagen",
@@ -398,12 +397,13 @@
       "seats": 5,
       "mileage": "40,000 miles",
       "fuel_type": "Petrol",
-      "transmission": "Automatic"
+      "transmission": "Automatic",
+      "isDeleted":false
     }
   ],
     "premiumCars": [
       {
-        "id": "a1",
+
         "name": "Lamborghini Aventador",
         "model": "Aventador LP 780-4",
         "company": "Lamborghini",
@@ -413,7 +413,7 @@
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/2023_Lamborghini_Aventador_Ultimae.jpg/1200px-2023_Lamborghini_Aventador_Ultimae.jpg"
       },
       {
-        "id": "a2",
+
         "name": "Nissan GT-R",
         "model": "GT-R R35",
         "company": "Nissan",
@@ -423,7 +423,7 @@
         "image": "https://img.freepik.com/premium-photo/nissan-gtr-r35-best-jdm-cars-wallpaper_1003686-33696.jpg"
       },
       {
-        "id": "a3",
+
         "name": "Porsche 911 Turbo S",
         "model": "911 Turbo S",
         "company": "Porsche",

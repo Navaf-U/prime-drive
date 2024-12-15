@@ -7,6 +7,7 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { CiShoppingCart } from "react-icons/ci";
 import { useSelector } from "react-redux";
+import SearchBar from "./SearchBar";
 function Navbar() {
   const [menuBar,setMenBar]=useState(false)
   const cartProducts = useSelector(state=>state.cart)
@@ -39,15 +40,9 @@ function Navbar() {
             REVIEWS & NEWS
           </h1>
         </div>
-        <div className="hidden sm:flex w-[300px] me-5">
-          <input
-            type="text"
-            placeholder="Search"
-            className="p-2 border w-[100%] border-gray-300 rounded-md outline-[#8C3061]"
-          />
-        </div>
-        <div className="flex gap-5">
-          <CiSearch size={30} className="text-[#8C3061 sm:hidden "/>
+        <SearchBar/>
+        <div className="flex gap-5">  
+          <CiSearch size={30} className="text-[#8C3061] sm:hidden "/>
           <p className="text-[#8C3061] cursor-pointer hover:text-[#da45ee]">
             <CiLocationOn size={30} />
           </p>

@@ -49,7 +49,7 @@ function Card({
             Description: <span className="font-semibold">{description}</span>
           </p>
           <p className="text-gray-600 mb-2">
-            Previous Owners:{" "}
+            Previous Owners:
             <span className="font-semibold">{previous_owners}</span>
           </p>
           <NavLink

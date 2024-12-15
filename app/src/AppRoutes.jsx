@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Cart from "./pages/Cart";
 import { Routes, Route, Outlet } from "react-router-dom";
+import SearchedPage from "./pages/SearchedPage";
 function AppRoutes() {
   return (
     <div>
@@ -22,9 +23,10 @@ function AppRoutes() {
            path="/" element={<Shop />} />
           <Route path="/usedcars" element={<UsedCars/>}/>
           <Route path="/product/:id" element={<ProductsView/>}/>
-          <Route path="login" element={<Login/>}/>
-          <Route path="signup" element={<Signup/>}/>
-          <Route path="cart" element={<Cart/>}/>
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/signup" element={<Signup/>}/>
+          <Route path="/cart" element={<Cart/>}/>
+          <Route path="/search" element={<SearchedPage/>}/>
           </Route>
       </Routes>
     </div>
