@@ -15,10 +15,11 @@ function SearchBar() {
                 type="text"
                 placeholder="Search products..."
                 value={query}
+                className="outline-none border border-gray-300 border-e-0 px-2 py-1"
                 onChange={(e) => setQuery(e.target.value)}
             />
             <NavLink to="/search">
-            <button onClick={handleSearch}>Search</button>
+            <button onClick={handleSearch} className="border-s-0 border border-gray-300 pe-1 py-1">Search</button>
             </NavLink>
         </div>
   )

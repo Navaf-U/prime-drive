@@ -1,4 +1,4 @@
-import Shop from "./Components/Shop";
+import Shop from "./pages/Shop";
 import Navbar from "./Components/Navbar";
 import UsedCars from "./pages/UsedCars";
 import ProductsView from "./pages/ProductsView";
