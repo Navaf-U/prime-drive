@@ -15,7 +15,7 @@ export const fetchProducts = createAsyncThunk("products/fetch",async()=>{
 })
 
 export const fetchPremiumProducts = createAsyncThunk("premiumProducts/fetch",async()=>{
-    const response = await axios.get("http://localhost:4000/premiumCars");
+    const response = await axios.get("http://localhost:3000/premiumCars");
     return response.data
 })
 

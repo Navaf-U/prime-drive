@@ -8,6 +8,8 @@ const getAllProducts = async (req, res, next) => {
     res.status(200).json(products);
 };
 
+
+
 const addProduct = async (req, res) => {
     const { name, model, company, years_old, previous_owners, rate, description, image, type, seats, mileage, fuel_type, transmission } = req.body;
     const product = await Product.create({ name, model, company, years_old, previous_owners, rate, description, image, type, seats, mileage, fuel_type, transmission });
