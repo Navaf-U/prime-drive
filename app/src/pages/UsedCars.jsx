@@ -1,24 +1,24 @@
 import { useEffect } from "react";
 import Card from "../Components/shared/Card";
 import { useDispatch, useSelector } from "react-redux";
-import {fetchProducts} from "../Slices/productsSlice"
+import { fetchProducts } from "../Slices/productsSlice";
 function UsedCars() {
-    const { products,loading, error  } = useSelector((state)=>state.products)
-    const dispatch = useDispatch()
+  const { products, loading, error } = useSelector((state) => state.products);
+  const dispatch = useDispatch();
 
-    useEffect(()=>{
-      dispatch(fetchProducts())
-    },[dispatch])
+  useEffect(() => {
+    dispatch(fetchProducts());
+  }, [dispatch]);
 
-    if(loading){
-      return <p>Loading...</p>
-    }
-    if(error){
-      return <p>{error}</p>
-    }
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+  if (error) {
+    return <p>{error}</p>;
+  }
   return (
     <div className="">
-       <div className="mt-28 flex items-center justify-center gap-5 flex-wrap">
+      <div className="mt-28 flex items-center justify-center gap-5 flex-wrap">
         {products.map((item) => (
           <div key={item._id}>
             <Card
@@ -41,7 +41,7 @@ function UsedCars() {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default UsedCars
+export default UsedCars;
