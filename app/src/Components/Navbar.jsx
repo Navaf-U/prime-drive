@@ -51,9 +51,7 @@ function Navbar() {
             <HiOutlineUserCircle size={30} />
           </p>
           </NavLink>
-
       { /* i need to add the isLogged condition */ }
-
           <NavLink to="/cart">
           <div className="text-[#8C3061] cursor-pointer hover:text-[#da45ee] position relative">
             <CiShoppingCart size={30} />
