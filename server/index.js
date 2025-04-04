@@ -3,10 +3,14 @@ import cors from "cors";
 import dotenv from "dotenv";
 import ConnectDB from "./config/connectDB.js";
 import publicRoutes from './routes/publicRoutes.js';
-import manageError from "./middleware/ManageError.js";
+import manageError from "./middleware/
+
+ManageError.js";
 dotenv.config();
 const app = express();
+
 ConnectDB()
+
 app.use(cors(
     {
         origin:process.env.CLIENT_URL,
