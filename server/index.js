@@ -32,8 +32,9 @@ app.all("*",(req,res)=>{
     res.status(400).json({message:'cannot access the endpoint'})
   })
 
+app.use(manageError);
+
 app.listen(PORT, () => {
     console.log(`server is running on port ${process.env.PORT}`);
 });
 
-app.use(manageError);
